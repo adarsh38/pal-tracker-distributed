@@ -20,8 +20,8 @@ jobs:
       install: skip
       before_script:
         - mysql -uroot < databases/create_databases.sql
-        - ./gradlew testMigrate
         - chmod a+x gradlew
+        - ./gradlew testMigrate
       script: ./gradlew clean build
       before_deploy:
         - git config --local user.name "Travis CI"
