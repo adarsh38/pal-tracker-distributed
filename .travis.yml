@@ -13,6 +13,7 @@ if: tag IS blank
 jobs:
   include:
     - stage: build and publish
+        - chmod a+x gradlew
       language: java
       jdk: openjdk11
       addons:
