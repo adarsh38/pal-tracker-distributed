@@ -10,4 +10,5 @@ applications:
   services:
   - tracker-allocations-database
   - tracker-service-registry-adarsh
+  - tracker-circuit-breaker-dashboard2
 
